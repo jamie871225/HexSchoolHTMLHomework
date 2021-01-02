@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexHouse05</title>
+    <style type="text/css">
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        body{
+            font-family:Microsoft JhengHei;
+            color:#37523d;
+        }
+        .wrap{
+            width:1282px;
+            margin:0 auto;
+        }
+        .smallbox{
+            height:170px;
+            background-color:#e7eeea;
+            margin-bottom:45px;
+            padding-left:22px;
+            padding-right:22px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .smallcontent{
+            width:375px;
+            display:flex;
+        }
+        .smallcontent img{
+            width:55px;
+            margin-right:12px;
+            margin-top:-10px;
+        }
+        h3{
+            font-weight:bold;
+            letter-spacing:1px;
+        }
+        .smallcontent p{
+            font-size:14px;
+            margin-top:25px;
+            line-height:1.3;
+            letter-spacing:0.5px;
+        }
+        .mediumbox{
+            height:240px;
+            background-color:#e7eeea;
+            margin-bottom:45px;
+            padding-left:22px;
+            padding-right:22px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .mediumcontent{
+            width:375px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+        .mediumbox img{
+            margin-bottom:15px;
+        }
+        .mediumbox p{
+            font-size:14px;
+            margin-top:22px;
+            text-align:center;
+            line-height:1.3;
+            letter-spacing:0.5px;
+        }
+        .bigbox{
+            height:310px;
+            background-color:#e7eeea;
+            padding-left:22px;
+            padding-right:22px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+        .bigbox p{
+            margin-top:24px;
+            letter-spacing:0.5px;
+            font-size:14px;
+        }
+        .topcontent{
+            display:flex;
+            align-items:center;
+        }
+        .topcontent img{
+            margin-right:12px;
+        }
+        .bottomcontent{
+            display:flex;
+            flex-direction:row-reverse;
+            align-items:center;
+        }
+        .bottomcontent img{
+            margin-left:12px;
+        }
+        </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="smallbox">
+            <li class="smallcontent">
+                <div>
+                    <img src="logo-small.png" alt="SmallLogo">
+                </div>
+                <div>  
+                    <h3>為什麼一定要吃甜點？</h3>  
+                    <p>
+                        青山依舊在，幾度夕陽紅。慣看秋月春風。一壺
+                        濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，
+                        滾滾長江東逝水，白髮漁樵江渚上，古今多少
+                        事，都付笑談中。
+                    </p>
+                </div>    
+            </li>
+            <li class="smallcontent">
+                <div>
+                    <img src="logo-small.png" alt="SmallLogo">
+                </div>
+                <div>  
+                    <h3>為什麼一定要吃甜點？</h3>  
+                    <p>
+                        青山依舊在，幾度夕陽紅。慣看秋月春風。一壺
+                        濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，
+                        滾滾長江東逝水，白髮漁樵江渚上，古今多少
+                        事，都付笑談中。
+                    </p>
+                </div>    
+            </li>
+            <li class="smallcontent">
+                <div>
+                    <img src="logo-small.png" alt="SmallLogo">
+                </div>
+                <div>  
+                    <h3>為什麼一定要吃甜點？</h3>  
+                    <p>
+                        青山依舊在，幾度夕陽紅。慣看秋月春風。一壺
+                        濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，
+                        滾滾長江東逝水，白髮漁樵江渚上，古今多少
+                        事，都付笑談中。
+                    </p>
+                </div>    
+            </liv>
+        </ul>
+        <ul class="mediumbox">
+            <li class="mediumcontent">
+                <div>
+                    <img src="logo-medium.png" alt="MediumLogo">
+                </div>
+                <h3>為什麼一定要吃甜點？</h3>  
+                <p>
+                    青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相<br>
+                    逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，<br>
+                    白髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+            </li>
+            <li class="mediumcontent">
+                <div>
+                    <img src="logo-medium.png" alt="MediumLogo">
+                </div>
+                <h3>為什麼一定要吃甜點？</h3>  
+                <p>
+                    青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相<br>
+                    逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，<br>
+                    白髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+            </li>
+            <li class="mediumcontent">
+                <div>
+                    <img src="logo-medium.png" alt="MediumLogo">
+                </div>
+                <h3>為什麼一定要吃甜點？</h3>  
+                <p>
+                    青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相<br>
+                    逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，<br>
+                    白髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+            </li>        
+        </ul>
+        <ul class="bigbox">
+            <li class="topcontent">
+                <div>
+                    <img src="logo-big.png" alt="BigLogo">
+                </div>
+                <div>
+                    <h3>為什麼一定要吃甜點？</h3>
+                    <p>                    
+                        青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                    </p>
+                </div>    
+            </li>
+            <li class="bottomcontent">
+                <div>
+                    <img src="logo-big.png" alt="BigLogo">
+                </div>
+                <div>
+                    <h3>為什麼一定要吃甜點？</h3>
+                    <p>                    
+                        青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

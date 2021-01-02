@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexHouse09</title>
+    <style type="text/css">
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        body{
+            font-family:Microsoft JhengHei;
+        }
+        .wrap{
+            width:300px;
+            margin:0 auto;
+        }
+        .listbox{
+            margin-top:6px;
+            margin-bottom:6px;
+            border:0.5px solid #e7eeea;
+        }
+        h1,h2{
+            font-size:24px;
+            line-height:70px;
+            text-align:center;
+            color:#829886;
+            background-color:#e7eeea;
+        }
+        .subtotalname{
+            display:flex;
+            justify-content:space-between;
+            margin-left:18px;
+            margin-right:18px;
+            margin-top:14px;
+            color:#829886;
+            line-height:2;
+        }
+        .subtotalmoney{
+            text-align:right;
+        }
+        .total{
+            display:flex;
+            justify-content:space-between;
+            margin-left:18px;
+            margin-right:18px;
+            color:#829886;
+            font-weight:bold;
+            font-size:20px;
+            margin-top:14px;
+            margin-bottom:16px;
+        }
+        .shoppingwrap{
+            padding:9px 18px;
+        }
+        .shoppingcontent{
+            display:flex;
+            color:#829886;
+            padding-top:9px;
+            padding-bottom:9px;
+        }
+        img{
+            padding-right:18px;
+        }
+        .shoppinglist{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+        .pricenumber{
+            font-weight:bold;
+            font-size:20px;
+            margin-top:12px;
+        }
+        </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="listbox">
+            <h1>訂單摘要</h1>
+            <div class="subtotalname">
+                <ul>
+                    <li>小計</li>
+                    <li>運費</li>
+                </ul>
+                <ul class="subtotalmoney">
+                    <li>NT$ 2,700</li>
+                    <li>NT$ 300</li>
+                </ul>
+            </div>
+            <div class="total">
+                <ul>
+                    <li>總計</li>
+                </ul>
+                <ul>
+                    <li>NT$ 3,000</li>
+                </ul>    
+            </div>
+        </div>
+        <div class="listbox">
+            <h2>購物清單</h2>
+            <ul class="shoppingwrap">
+                <li class="shoppingcontent">
+                    <div>
+                        <img src="strawberry.png" alt="Strawberry">
+                    </div>
+                    <div class="shoppinglist">
+                        <ul>
+                            <li>焦糖馬卡龍（2）</li>
+                            <li class="pricenumber">NT$ 900</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="shoppingcontent">
+                    <div>
+                        <img src="strawberry.png" alt="Strawberry">
+                    </div>
+                    <div class="shoppinglist">
+                        <ul>
+                            <li>焦糖馬卡龍（2）</li>
+                            <li class="pricenumber">NT$ 900</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="shoppingcontent">
+                    <div>
+                        <img src="strawberry.png" alt="Strawberry">
+                    </div>
+                    <div class="shoppinglist">
+                        <ul>
+                            <li>焦糖馬卡龍（2）</li>
+                            <li class="pricenumber">NT$ 900</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>    
+        </div>
+    </div>
+</body>
+</html>

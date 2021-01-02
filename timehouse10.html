@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexHouse10</title>
+    <style type="text/css">
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        body{
+            font-family:Microsoft JhengHei;
+        }
+        .wrap{
+            width:940px;
+            margin:0 auto;
+            display:flex;
+            justify-content:space-between;
+        }
+        .menu{
+            width:300px;
+            margin-top:6px;
+        }
+        .wrap .menu li,.content li{
+            height:70px;
+            text-align:center;
+            line-height:70px;
+        }
+        .dessertclass{
+            background-color:#37523d;
+            color:white;
+            font-size:24px;
+            font-weight:bold;
+        }
+        .menulist a{
+            color:#37523d;
+            font-size:24px;
+            font-weight:bold;
+            border:0.5px solid #e7eeea;
+            border-collapse:collapse;
+            display:block;
+            text-decoration:none;
+        }
+        .menulist a:hover{
+            background-color:#e7eeea;
+        }
+        .article{
+            width:620px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+        }
+        .content{
+            width:300px;
+            margin-top:6px;
+            margin-bottom:12px;
+        }
+        .content li{
+            font-size:20px;
+            color:#37523d;
+            border:0.5px solid #e7eeea;
+        }
+        .contentname{
+            display:flex;
+        }
+        .content a{
+            font-size:24px;
+            font-weight:bold;
+            color:#37523d;
+            background-color:#e7eeea;
+            height:85px;
+            text-align:center;
+            line-height:85px;
+            display:block;
+            text-decoration:none;
+        }
+        .content a:hover{
+            background-color:#37523d;
+            color:#e7eeea;
+        }
+        .articlename{
+            width:185px;
+        }
+        .number{
+            font-weight:bold;
+            width:115px;
+        }
+        </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="menu">
+            <ul>
+                <li class="dessertclass">甜點類別</li>
+                <li class="menulist"><a href="#">所有甜點（45）</a></li>
+                <li class="menulist"><a href="#">本日精選（10）</a></li>
+                <li class="menulist"><a href="#">人氣精選（26）</a></li>
+                <li class="menulist"><a href="#">新品上市（12）</a></li>
+            </ul>
+        </div>
+        <ul class="article">
+            <li class="content">
+                <img src="dessertimg01.png" alt="Dessert">
+                <ul class="contentname">
+                    <li class="articlename"><h3>焦糖甜甜圈</h3></li>
+                    <li class="number">NT＄ 450</li>
+                </ul>
+                <a href="#">加入購物車</a>
+            </li>
+            <li class="content">
+                <img src="dessertimg02.png" alt="Dessert">
+                <ul class="contentname">
+                    <li class="articlename"><h3>焦糖甜甜圈</h3></li>
+                    <li class="number">NT＄ 450</li>
+                </ul>
+                <a href="#">加入購物車</a>
+            </li>
+            <li class="content">
+                <img src="dessertimg03.png" alt="Dessert">
+                <ul class="contentname">
+                    <li class="articlename"><h3>焦糖甜甜圈</h3></li>
+                    <li class="number">NT＄ 450</li>
+                </ul>
+                <a href="#">加入購物車</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
