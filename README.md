@@ -1,1 +1,1 @@
-# HexSchoolTimeHouse
+# HexSchool
